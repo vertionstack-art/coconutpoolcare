@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Coconut Pool Care | Pool Service in Fresno, Clovis and Madera</title>
+<meta name="description" content="Weekly pool service, repairs, installs, lighting, resurfacing and green-to-clean in Fresno, Clovis and Madera, CA. Open 24 hours. Call (559) 545-8080.">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,700..900&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --white:#FFFFFF;
+  --black:#000000;
+  --coco:#5EC4DC;      /* logo water blue */
+  --coco-deep:#0B5F78; /* readable blue for small text on white */
+  --mist:#EEF8FB;
+  --gray:#575E6B;      /* logo gray, darkened for small text */
+  --line:#E4E9EE;
+  --wa:#25D366;
+  --display:'Archivo',system-ui,sans-serif;
+  --body:'Hanken Grotesk',system-ui,sans-serif;
+  --g:20px;
+  --max:1160px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--white);color:var(--black);font:400 17px/1.55 var(--body);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{font-family:var(--display);text-wrap:balance}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--g)}
+:focus-visible{outline:3px solid var(--coco-deep);outline-offset:3px;border-radius:6px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;border:0;font:700 17px/1 var(--body);text-decoration:none;cursor:pointer;-webkit-user-select:none;user-select:none}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-black{background:var(--black);color:#fff}
+.btn-coco{background:var(--coco);color:var(--black)}
+.btn-ghost{background:#fff;color:var(--black);box-shadow:inset 0 0 0 2px var(--black)}
+@media (hover:hover){
+  .btn-black:hover{background:#1f2937}
+  .btn-coco:hover{background:#7fd2e6}
+  .btn-ghost:hover{background:var(--mist)}
+}
+
+/* Header */
+.top{padding-top:env(safe-area-inset-top)}
+.top .wrap{height:76px;display:flex;align-items:center;justify-content:space-between}
+.top img{width:56px;height:auto}
+.top-wa{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 16px;border-radius:999px;background:var(--black);color:#fff;font:700 15px/1 var(--body);text-decoration:none}
+.top-wa svg{width:18px;height:18px}
+
+/* Hero: type first, then the circle */
+.hero{padding:20px 0 0;overflow:hidden}
+.stars-line{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px}
+.stars{color:#F5B301;letter-spacing:1px;font-size:17px}
+.hero h1{margin-top:18px;font-weight:900;font-stretch:125%;font-size:min(calc((100vw - 44px) / 6.6),150px);line-height:.9;letter-spacing:-.035em;text-transform:uppercase}
+.hero-sub{margin-top:22px;max-width:30ch;font-size:clamp(19px,2.3vw,23px);line-height:1.4;font-weight:500}
+.hero-ctas{margin-top:26px;display:grid;gap:10px}
+@media (min-width:640px){.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}}
+.hero-art{position:relative;margin-top:44px;display:flex;justify-content:flex-end}
+.circle{width:min(118vw,760px);aspect-ratio:1;border-radius:50%;overflow:hidden;margin-right:-28vw;background:var(--mist)}
+.circle img{width:100%;height:100%;object-fit:cover;object-position:50% 92%}
+.open-tag{position:absolute;left:0;top:18%;display:flex;align-items:center;gap:10px;padding:14px 18px;border-radius:20px;background:#fff;box-shadow:inset 0 0 0 2px var(--black);font:700 16px/1.2 var(--body)}
+.open-tag i{width:10px;height:10px;border-radius:50%;background:var(--wa);flex:none}
+.cities{position:absolute;left:0;bottom:16%;max-width:200px;font:800 15px/1.3 var(--display);font-stretch:112%;text-transform:uppercase;letter-spacing:.01em}
+@media (min-width:960px){
+  .hero{padding-top:36px}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:24px;align-items:center}
+  .hero-art{margin-top:0}
+  .circle{width:100%;margin-right:-120px}
+  .hero h1{font-size:clamp(64px,7.4vw,88px)}
+}
+
+/* Section rhythm */
+.sec{padding:88px 0}
+.sec-title{font-weight:900;font-stretch:118%;font-size:clamp(38px,8vw,72px);line-height:.95;letter-spacing:-.03em;text-transform:uppercase}
+.sec-lede{margin-top:16px;max-width:46ch;color:var(--gray);font-size:18px}
+
+/* Services */
+.svc-list{margin-top:44px;display:grid;border-top:2px solid var(--black)}
+.svc{display:grid;grid-template-columns:76px 1fr;gap:18px;padding:24px 0;border-bottom:1px solid var(--line)}
+.svc img{width:76px;height:76px;object-fit:contain;mix-blend-mode:multiply}
+.svc h3{font-weight:800;font-stretch:112%;font-size:22px;line-height:1.1;letter-spacing:-.01em}
+.svc p{margin-top:6px;color:#374151;font-size:16.5px}
+@media (min-width:860px){
+  .svc-list{grid-template-columns:repeat(3,1fr);column-gap:40px}
+  .svc{grid-template-columns:1fr;padding:30px 0}
+  .svc img{width:96px;height:96px}
+}
+
+/* Work strip */
+.work{background:var(--mist)}
+.strip{margin-top:36px;display:grid;grid-auto-flow:column;grid-auto-columns:72%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:var(--g);padding:0 var(--g) 6px;margin-left:calc(var(--g) * -1);margin-right:calc(var(--g) * -1);scrollbar-width:none;overscroll-behavior-x:contain}
+.strip::-webkit-scrollbar{display:none}
+.strip figure{margin:0;scroll-snap-align:start}
+.strip img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:24px;background:#dfeff4}
+.strip figcaption{margin-top:10px;font-weight:600;font-size:15px}
+@media (min-width:860px){.strip{grid-auto-flow:row;grid-template-columns:repeat(4,1fr);overflow:visible;margin:36px 0 0;padding:0}}
+
+/* Reviews */
+.proof{background:var(--black);color:#fff;text-align:center}
+.proof .score{font-weight:900;font-stretch:125%;font-size:clamp(120px,34vw,260px);line-height:.85;letter-spacing:-.04em}
+.proof .stars{display:block;margin-top:14px;font-size:30px;letter-spacing:4px}
+.proof p{margin:18px auto 0;max-width:28ch;font-size:20px;color:#D1D5DB}
+.proof .btn{margin-top:30px}
+
+/* Estimate */
+.est-grid{display:grid;gap:40px}
+.form{display:grid;gap:16px}
+.row2{display:grid;gap:16px}
+@media (min-width:640px){.row2{grid-template-columns:1fr 1fr}}
+.field{display:grid;gap:6px}
+.field label,.legend{font-weight:700;font-size:15px}
+.field input,.field select,.field textarea{width:100%;min-height:54px;padding:12px 14px;border:2px solid var(--line);border-radius:14px;background:#fff;color:var(--black);font:400 16px/1.4 var(--body);-webkit-appearance:none;appearance:none}
+.field select{background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 8l5 5 5-5' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") right 14px center/18px no-repeat;padding-right:44px}
+.field textarea{min-height:110px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--black)}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.pills label{position:relative}
+.pills input{position:absolute;opacity:0;width:1px;height:1px}
+.pills span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:999px;border:2px solid var(--line);font-weight:600;font-size:15.5px;cursor:pointer}
+.pills input:checked+span{background:var(--black);border-color:var(--black);color:#fff}
+.pills input:focus-visible+span{outline:3px solid var(--coco-deep);outline-offset:2px}
+.form .btn{width:100%;margin-top:6px}
+.form-note{color:var(--gray);font-size:14.5px;text-align:center}
+.form-msg{font-weight:600;color:var(--coco-deep);min-height:1em;text-align:center}
+@media (min-width:960px){.est-grid{grid-template-columns:.9fr 1.1fr;gap:72px;align-items:start}}
+
+/* Visit */
+.visit{background:var(--mist)}
+.visit-grid{display:grid;gap:24px}
+.facts{display:grid;gap:28px}
+.fact h3{font:700 15px/1 var(--body);color:var(--gray)}
+.fact a,.fact .v{display:block;margin-top:8px;font-weight:800;font-stretch:112%;font-size:clamp(24px,5vw,32px);line-height:1.15;letter-spacing:-.01em;text-decoration:none}
+.fact .v{display:flex;align-items:center;gap:12px}
+.fact .v i{width:12px;height:12px;border-radius:50%;background:var(--wa)}
+.map{border-radius:28px;overflow:hidden;aspect-ratio:4/3;background:#dbeef4}
+.map iframe{width:100%;height:100%;border:0;display:block}
+@media (min-width:900px){.visit-grid{grid-template-columns:1fr 1.2fr;gap:56px;align-items:center}.map{aspect-ratio:auto;height:460px}}
+
+footer{padding:36px 0 120px;font-size:14px;color:var(--gray)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+footer img{width:44px}
+footer .brand{display:flex;align-items:center;gap:12px;color:var(--black);font-weight:700}
+@media (min-width:720px){footer{padding-bottom:40px}}
+
+/* Phone action bar */
+.thumb{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line)}
+.thumb .btn{flex:1;min-height:52px;padding:0 12px;font-size:16px}
+@media (min-width:720px){.thumb{display:none}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a href="#top" aria-label="Coconut Pool Care, back to top"><img src="img/logo.png" alt="Coconut Pool Care Service logo" width="322" height="315"></a>
+    <a class="top-wa" href="https://wa.me/15595458080" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg>WhatsApp</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="stars-line"><span class="stars" aria-hidden="true">★★★★★</span>5.0 from 204 Google reviews</div>
+        <h1>Coconut Pool Care</h1>
+        <p class="hero-sub">Weekly pool service, repairs and upgrades for homes in Fresno, Clovis and Madera.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-black" href="https://wa.me/15595458080" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg>Message us on WhatsApp</a>
+          <a class="btn btn-coco" href="#estimate">Estimate my job</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="circle"><img src="img/hero.jpg" alt="Clear blue backyard pool with a skimmer net, serviced by Coconut Pool Care" width="486" height="593" fetchpriority="high"></div>
+        <div class="open-tag"><i aria-hidden="true"></i>Open 24 hours,<br>7 days a week</div>
+        <p class="cities">Fresno<br>Clovis<br>Madera</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="services">
+    <div class="wrap">
+      <h2 class="sec-title">What we do</h2>
+      <p class="sec-lede">From the weekly clean to a full resurface, one crew handles all of it.</p>
+      <div class="svc-list">
+        <article class="svc"><img src="img/m-weekly.png" alt="" width="240" height="240" loading="lazy"><div><h3>Pristine Pool Maintenance</h3><p>Skimming, vacuuming and chemical balancing every week, so your pool is ready whenever you are.</p></div></article>
+        <article class="svc"><img src="img/m-repair.png" alt="" width="240" height="240" loading="lazy"><div><h3>Expert Repair Precision</h3><p>Pump acting up or filter giving out? We find the problem and fix it.</p></div></article>
+        <article class="svc"><img src="img/m-drain.png" alt="" width="240" height="240" loading="lazy"><div><h3>Efficient Water Renewal</h3><p>A safe, complete drain and refill when your water needs a fresh start.</p></div></article>
+        <article class="svc"><img src="img/m-install.png" alt="" width="240" height="240" loading="lazy"><div><h3>Seamless Install Upgrades</h3><p>New heaters, automation and the latest equipment, installed and running.</p></div></article>
+        <article class="svc"><img src="img/m-light.png" alt="" width="240" height="240" loading="lazy"><div><h3>Radiant Light Upgrades</h3><p>Ambient and safety lighting that makes night swims look as good as they feel.</p></div></article>
+        <article class="svc"><img src="img/m-paint.png" alt="" width="240" height="240" loading="lazy"><div><h3>Sleek Pool Resurfacing</h3><p>Pick your color. A new finish protects the surface and makes the pool yours.</p></div></article>
+        <article class="svc"><img src="img/m-green.png" alt="" width="240" height="240" loading="lazy"><div><h3>Green To Clean Service</h3><p>Algae taken over? We treat it and clean it until the water is clear again.</p></div></article>
+        <article class="svc"><img src="img/m-startup.png" alt="" width="240" height="240" loading="lazy"><div><h3>Swift Start-Up Care</h3><p>New pool or fresh refill, we inspect and adjust everything for a clean first swim.</p></div></article>
+        <article class="svc"><img src="img/m-chem.png" alt="" width="240" height="240" loading="lazy"><div><h3>Perfect Chemical Balance</h3><p>We bring and apply the start-up chemicals that make your water safe and balanced.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec work">
+    <div class="wrap">
+      <h2 class="sec-title">Our work</h2>
+      <p class="sec-lede">Real pools we've taken care of around the Valley.</p>
+      <div class="strip">
+        <figure><img src="img/job-1.jpg" alt="Sparkling pool after weekly service" width="487" height="670" loading="lazy"><figcaption>Weekly service</figcaption></figure>
+        <figure><img src="img/job-3.jpg" alt="Pool water after a green-to-clean treatment" width="594" height="793" loading="lazy"><figcaption>Back to blue</figcaption></figure>
+        <figure><img src="img/job-4.jpg" alt="Freshly resurfaced white pool, empty before refill" width="547" height="720" loading="lazy"><figcaption>Fresh resurface</figcaption></figure>
+        <figure><img src="img/job-2.jpg" alt="Pool filter equipment opened for repair" width="557" height="774" loading="lazy"><figcaption>Equipment repair</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec proof">
+    <div class="wrap">
+      <div class="score">5.0</div>
+      <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+      <p>A 5.0 average across 204 Google reviews.</p>
+      <a class="btn btn-coco" href="https://www.google.com/maps/search/?api=1&query=Coconut+Pool+Care+5966+E+Erin+Ave+Fresno+CA" target="_blank" rel="noopener">Read the reviews on Google</a>
+    </div>
+  </section>
+
+  <section class="sec" id="estimate">
+    <div class="wrap est-grid">
+      <div>
+        <h2 class="sec-title">Estimate my job</h2>
+        <p class="sec-lede">Tell us about your pool and what it needs. Your request goes straight to the Coconut Pool Care inbox, and we'll reply with an estimate.</p>
+        <a class="btn btn-ghost" href="https://wa.me/15595458080" target="_blank" rel="noopener" style="margin-top:26px">Rather text? WhatsApp us</a>
+      </div>
+      <form class="form" id="est-form" novalidate>
+        <div class="row2">
+          <div class="field"><label for="f-name">Name</label><input id="f-name" autocomplete="name"></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" type="tel" inputmode="tel" autocomplete="tel"></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="f-email">Email</label><input id="f-email" type="email" inputmode="email" autocomplete="email"></div>
+          <div class="field"><label for="f-zip">ZIP code</label><input id="f-zip" inputmode="numeric" autocomplete="postal-code"></div>
+        </div>
+        <div class="field"><label for="f-svc">Service</label>
+          <select id="f-svc">
+            <option>Pristine Pool Maintenance (weekly)</option><option>Expert Repair Precision</option><option>Efficient Water Renewal (drain)</option><option>Seamless Install Upgrades</option><option>Radiant Light Upgrades</option><option>Sleek Pool Resurfacing</option><option>Green To Clean Service</option><option>Swift Start-Up Care</option><option>Perfect Chemical Balance</option>
+          </select></div>
+        <div>
+          <span class="legend" id="pool-type">Pool type</span>
+          <div class="pills" role="radiogroup" aria-labelledby="pool-type">
+            <label><input type="radio" name="type" checked><span>In-ground</span></label>
+            <label><input type="radio" name="type"><span>Above-ground</span></label>
+            <label><input type="radio" name="type"><span>Pool and spa</span></label>
+          </div>
+        </div>
+        <div class="field"><label for="f-msg">Tell us more (optional)</label><textarea id="f-msg" placeholder="Pool size, what's going on, best time to reach you"></textarea></div>
+        <button class="btn btn-black" type="submit">Send my estimate request</button>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="sec visit">
+    <div class="wrap visit-grid">
+      <div class="facts">
+        <h2 class="sec-title">Find us</h2>
+        <div class="fact"><h3>Address</h3><a href="https://maps.google.com/?q=5966+E+Erin+Ave,+Fresno,+CA+93727" target="_blank" rel="noopener">5966 E Erin Ave<br>Fresno, CA 93727</a></div>
+        <div class="fact"><h3>Hours</h3><span class="v"><i aria-hidden="true"></i>Open 24 hours, every day</span></div>
+        <div class="fact"><h3>Phone</h3><a href="tel:+15595458080">(559) 545-8080</a></div>
+        <a class="btn btn-black" href="https://wa.me/15595458080" target="_blank" rel="noopener">Message us on WhatsApp</a>
+      </div>
+      <div class="map"><iframe title="Map to Coconut Pool Care, 5966 E Erin Ave, Fresno" src="https://maps.google.com/maps?q=5966%20E%20Erin%20Ave%2C%20Fresno%2C%20CA%2093727&amp;z=13&amp;output=embed" loading="lazy"></iframe></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="brand"><img src="img/logo.png" alt="" width="322" height="315">Coconut Pool Care Service</span>
+    <span><a href="https://instagram.com/coconut_pool_care" target="_blank" rel="noopener">@coconut_pool_care</a> &nbsp; Website preview by Vertion Stack</span>
+  </div>
+</footer>
+
+<nav class="thumb" aria-label="Quick actions">
+  <a class="btn btn-black" href="https://wa.me/15595458080" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn btn-coco" href="#estimate">Estimate my job</a>
+</nav>
+
+<script>
+document.getElementById('est-form').addEventListener('submit',function(e){
+  e.preventDefault();
+  document.getElementById('form-msg').textContent='This is a preview, so the form isn’t connected yet. On the live site, it lands in your email.';
+});
+</script>
+</body>
+</html>
