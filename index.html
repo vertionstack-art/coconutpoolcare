@@ -19,7 +19,7 @@
   --mist:#EEF8FB;
   --gray:#575E6B;      /* logo gray, darkened for small text */
   --line:#E4E9EE;
-  --wa:#25D366;
+  --open:#22C55E;
   --display:'Archivo',system-ui,sans-serif;
   --body:'Hanken Grotesk',system-ui,sans-serif;
   --g:20px;
@@ -50,8 +50,8 @@ h1,h2,h3{font-family:var(--display);text-wrap:balance}
 .top{padding-top:env(safe-area-inset-top)}
 .top .wrap{height:76px;display:flex;align-items:center;justify-content:space-between}
 .top img{width:56px;height:auto}
-.top-wa{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 16px;border-radius:999px;background:var(--black);color:#fff;font:700 15px/1 var(--body);text-decoration:none}
-.top-wa svg{width:18px;height:18px}
+.top-call{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 16px;border-radius:999px;background:var(--black);color:#fff;font:700 15px/1 var(--body);text-decoration:none}
+.top-call svg{width:18px;height:18px}
 
 /* Hero: type first, then the circle */
 .hero{padding:20px 0 0;overflow:hidden}
@@ -65,7 +65,7 @@ h1,h2,h3{font-family:var(--display);text-wrap:balance}
 .circle{width:min(118vw,760px);aspect-ratio:1;border-radius:50%;overflow:hidden;margin-right:-28vw;background:var(--mist)}
 .circle img{width:100%;height:100%;object-fit:cover;object-position:50% 92%}
 .open-tag{position:absolute;left:0;top:18%;display:flex;align-items:center;gap:10px;padding:14px 18px;border-radius:20px;background:#fff;box-shadow:inset 0 0 0 2px var(--black);font:700 16px/1.2 var(--body)}
-.open-tag i{width:10px;height:10px;border-radius:50%;background:var(--wa);flex:none}
+.open-tag i{width:10px;height:10px;border-radius:50%;background:var(--open);flex:none}
 .cities{position:absolute;left:0;bottom:16%;max-width:200px;font:800 15px/1.3 var(--display);font-stretch:112%;text-transform:uppercase;letter-spacing:.01em}
 @media (min-width:960px){
   .hero{padding-top:36px}
@@ -137,7 +137,7 @@ h1,h2,h3{font-family:var(--display);text-wrap:balance}
 .fact h3{font:700 15px/1 var(--body);color:var(--gray)}
 .fact a,.fact .v{display:block;margin-top:8px;font-weight:800;font-stretch:112%;font-size:clamp(24px,5vw,32px);line-height:1.15;letter-spacing:-.01em;text-decoration:none}
 .fact .v{display:flex;align-items:center;gap:12px}
-.fact .v i{width:12px;height:12px;border-radius:50%;background:var(--wa)}
+.fact .v i{width:12px;height:12px;border-radius:50%;background:var(--open)}
 .map{border-radius:28px;overflow:hidden;aspect-ratio:4/3;background:#dbeef4}
 .map iframe{width:100%;height:100%;border:0;display:block}
 @media (min-width:900px){.visit-grid{grid-template-columns:1fr 1.2fr;gap:56px;align-items:center}.map{aspect-ratio:auto;height:460px}}
@@ -159,7 +159,7 @@ footer .brand{display:flex;align-items:center;gap:12px;color:var(--black);font-w
 <header class="top">
   <div class="wrap">
     <a href="#top" aria-label="Coconut Pool Care, back to top"><img src="img/logo.png" alt="Coconut Pool Care Service logo" width="322" height="315"></a>
-    <a class="top-wa" href="https://wa.me/15595458080" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg>WhatsApp</a>
+    <a class="top-call" href="tel:+15595458080"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call</a>
   </div>
 </header>
 
@@ -171,7 +171,7 @@ footer .brand{display:flex;align-items:center;gap:12px;color:var(--black);font-w
         <h1>Coconut Pool Care</h1>
         <p class="hero-sub">Weekly pool service, repairs and upgrades for homes in Fresno, Clovis and Madera.</p>
         <div class="hero-ctas">
-          <a class="btn btn-black" href="https://wa.me/15595458080" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg>Message us on WhatsApp</a>
+          <a class="btn btn-black" href="tel:+15595458080"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>Call (559) 545-8080</a>
           <a class="btn btn-coco" href="#estimate">Estimate my job</a>
         </div>
       </div>
@@ -228,7 +228,7 @@ footer .brand{display:flex;align-items:center;gap:12px;color:var(--black);font-w
       <div>
         <h2 class="sec-title">Estimate my job</h2>
         <p class="sec-lede">Tell us about your pool and what it needs. Your request goes straight to the Coconut Pool Care inbox, and we'll reply with an estimate.</p>
-        <a class="btn btn-ghost" href="https://wa.me/15595458080" target="_blank" rel="noopener" style="margin-top:26px">Rather text? WhatsApp us</a>
+        <a class="btn btn-ghost" href="tel:+15595458080" style="margin-top:26px">Rather talk? Call (559) 545-8080</a>
       </div>
       <form class="form" id="est-form" novalidate>
         <div class="row2">
@@ -265,7 +265,7 @@ footer .brand{display:flex;align-items:center;gap:12px;color:var(--black);font-w
         <div class="fact"><h3>Address</h3><a href="https://maps.google.com/?q=5966+E+Erin+Ave,+Fresno,+CA+93727" target="_blank" rel="noopener">5966 E Erin Ave<br>Fresno, CA 93727</a></div>
         <div class="fact"><h3>Hours</h3><span class="v"><i aria-hidden="true"></i>Open 24 hours, every day</span></div>
         <div class="fact"><h3>Phone</h3><a href="tel:+15595458080">(559) 545-8080</a></div>
-        <a class="btn btn-black" href="https://wa.me/15595458080" target="_blank" rel="noopener">Message us on WhatsApp</a>
+        <a class="btn btn-black" href="tel:+15595458080">Call (559) 545-8080</a>
       </div>
       <div class="map"><iframe title="Map to Coconut Pool Care, 5966 E Erin Ave, Fresno" src="https://maps.google.com/maps?q=5966%20E%20Erin%20Ave%2C%20Fresno%2C%20CA%2093727&amp;z=13&amp;output=embed" loading="lazy"></iframe></div>
     </div>
@@ -280,7 +280,7 @@ footer .brand{display:flex;align-items:center;gap:12px;color:var(--black);font-w
 </footer>
 
 <nav class="thumb" aria-label="Quick actions">
-  <a class="btn btn-black" href="https://wa.me/15595458080" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn btn-black" href="tel:+15595458080">Call now</a>
   <a class="btn btn-coco" href="#estimate">Estimate my job</a>
 </nav>
 
